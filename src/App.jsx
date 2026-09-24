@@ -41,7 +41,7 @@ function App() {
         </button>
       </div>
 
-/* Nappi, joka laskee kuinka monta kertaa + ja - nappeja painettu yhteensä */
+      {/* Nappi, joka laskee kuinka monta kertaa + ja - nappeja painettu yhteensä */}
 
       <div>
         <button
