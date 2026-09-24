@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 
 function App() {
   const [count, setCount] = useState(0)
-  const [clicks, setClicks] = useState(0)
+  const [clicks, setClicks] = useState(0) /* Muuttujat klikkilaskurille */
 
   return (
     <div>
@@ -17,7 +14,7 @@ function App() {
           className="counter"
           onClick={() => {
             setCount((count) => count + 1)
-            setClicks((clicks) => clicks + 1)
+            setClicks((clicks) => clicks + 1) /*   Funktio joka seuraa klikkien määrää  */
           }}
 
         >
@@ -43,6 +40,9 @@ function App() {
           Decrease Count
         </button>
       </div>
+
+/* Nappi, joka laskee kuinka monta kertaa + ja - nappeja painettu yhteensä */
+
       <div>
         <button
           type='button'
